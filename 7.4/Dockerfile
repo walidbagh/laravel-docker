@@ -24,6 +24,7 @@ RUN apk add --no-cache \
     libc-dev \
     libjpeg-turbo-dev \
     libpng-dev \
+    libwebp-dev \
     libzip-dev \
     make \
     mysql-client \
@@ -47,7 +48,7 @@ RUN docker-php-ext-enable \
     xdebug
 
 # Configure php extensions
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg  --with-webp
 
 # Install php extensions
 RUN docker-php-ext-install \
