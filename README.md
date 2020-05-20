@@ -4,6 +4,14 @@
 [![Docker Badge](https://img.shields.io/docker/pulls/lorisleiva/laravel-docker)](https://hub.docker.com/r/lorisleiva/laravel-docker/)
 
 
+## Keeping this fork up to date with the original 
+https://www.youtube.com/watch?v=C5WxrnRVmuY
+
+## Changes:
+* Added Webp support (Only to version 7.4).
+
+## Versions:
+
 | Tags | PHP version | Features |
 | - | - | - |
 | 7.2 | 7.2 | ✅ Everything |
