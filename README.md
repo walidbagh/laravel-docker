@@ -14,11 +14,11 @@ https://www.youtube.com/watch?v=C5WxrnRVmuY
 
 | Tags | PHP version | Features |
 | - | - | - |
-| 7.2 | 7.2 | ✅ Everything |
-| 7.3 | 7.3 | ✅ Everything |
-| 7.4 | 7.4 | ✅ Everything |
-| stable | **7.4** | 🔗 Aliases the latest stable version of PHP that supports all features of this docker image.  |
-| latest | **7.4** | 🔗 Aliases the latest stable version of PHP available (even if that version does not support all features yet). |
+| 7.4 | 7.4 | ✅ Everything. |
+| 8.0 | 8.0 | ✅ Everything. |
+| 8.1 | 8.1 | ✅ Everything. |
+| stable | **8.0** | 🔗 Aliases the latest stable version of PHP that supports all features of this docker image.  |
+| latest | **8.0** | 🔗 Aliases the latest stable version of PHP available (even if that version does not support all features yet). |
 
 #### Use within your GitLab's pipelines.
 * [Run test suite and check codestyle](http://lorisleiva.com/using-gitlabs-pipeline-with-laravel/)

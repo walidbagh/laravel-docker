@@ -1,4 +1,4 @@
-FROM php:7.4-alpine
+FROM php:7.4.25-alpine3.13
 
 # Install dev dependencies
 RUN apk add --no-cache --virtual .build-deps \
@@ -29,7 +29,7 @@ RUN apk add --no-cache \
     make \
     mysql-client \
     nodejs \
-    nodejs-npm \
+    npm \
     oniguruma-dev \
     yarn \
     openssh-client \
@@ -39,11 +39,13 @@ RUN apk add --no-cache \
 
 # Install PECL and PEAR extensions
 RUN pecl install \
+    redis \
     imagick \
     xdebug
 
 # Enable PECL and PEAR extensions
 RUN docker-php-ext-enable \
+    redis \
     imagick \
     xdebug
 
@@ -65,6 +67,7 @@ RUN docker-php-ext-install \
     pdo_pgsql \
     pdo_sqlite \
     pcntl \
+    soap \
     tokenizer \
     xml \
     zip
